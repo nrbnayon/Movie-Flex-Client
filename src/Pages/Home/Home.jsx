@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Banner from "./Banner/Banner";
 
 const Home = () => {
   useEffect(() => {
@@ -30,7 +31,7 @@ const Home = () => {
         <title>MovieFlex | Home</title>
       </Helmet>
       <div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
-        Movie1
+        <Banner />
       </div>
       <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
         Movie1 Movie1
