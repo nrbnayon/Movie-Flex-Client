@@ -5,6 +5,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { toast } from "react-toastify";
 import useAuth from "../../hooks/useAuth";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
+import { Helmet } from "react-helmet-async";
 const Register = () => {
   const axiosPublic = useAxiosPublic();
   const navigate = useNavigate();
@@ -82,6 +83,9 @@ const Register = () => {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-[#8EA7E9]/20 p-6 ">
+      <Helmet>
+        <title>MovieFlex | Register</title>
+      </Helmet>
       <div className="flex h-full w-full overflow-hidden rounded-xl shadow-md  ">
         <div className="relative hidden  min-h-fit items-center justify-center bg-[#8EA7E9] md:flex md:w-[60%] lg:w-[40%]">
           <div className="absolute -top-2 z-10 left-[20%] h-16 w-16 rounded-full bg-gradient-to-br  from-white via-[#9eb6f8] to-[#6585dd]"></div>

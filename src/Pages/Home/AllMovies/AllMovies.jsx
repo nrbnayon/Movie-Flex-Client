@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 import { MdSearch } from "react-icons/md";
 import {
-  Button,
   Pagination,
   Stack,
   MenuItem,
@@ -171,6 +170,7 @@ const AllMovies = () => {
               className="bg-white border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
             >
               <MenuItem value="">All</MenuItem>
+              <MenuItem value="5.0">5.0</MenuItem>
               <MenuItem value="4.0">4.0 & Up</MenuItem>
               <MenuItem value="3.0">3.0 & Up</MenuItem>
               <MenuItem value="2.0">2.0 & Up</MenuItem>
@@ -202,7 +202,7 @@ const AllMovies = () => {
           >
             <div className="relative">
               <img
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-64 transition-transform duration-300 hover:scale-105"
                 src={movie.image}
                 alt={movie.name}
                 data-aos="zoom-in"
@@ -211,7 +211,7 @@ const AllMovies = () => {
                 className="absolute inset-0 flex items-center justify-center bg-transparent text-white text-lg font-bold rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 onClick={() => alert("Play button clicked")}
               >
-                <FaPlay className="w-12 h-12 fill-red-600" />
+                <FaPlay className="w-12 h-12 fill-red-600 transition-transform duration-300 hover:scale-110" />
               </button>
             </div>
             <div className="px-4 py-4 flex-grow">

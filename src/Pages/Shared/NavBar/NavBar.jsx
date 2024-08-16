@@ -83,7 +83,7 @@ const NavBar = () => {
       <div className="navbar-center font-cinzel font-bold hidden md:flex">
         <ul className="menu menu-horizontal space-x-2 px-1">{navLinks}</ul>
       </div>
-      <div className="navbar-center hidden md:flex">
+      {/* <div className="navbar-center hidden md:flex">
         <div className="relative">
           <input
             type="text"
@@ -94,9 +94,9 @@ const NavBar = () => {
             <FiSearch className="text-gray-500" />
           </button>
         </div>
-      </div>
+      </div> */}
       {/* Search Bar for Mobile */}
-      <div>
+      {/* <div>
         <div className="navbar-center md:hidden w-full  ">
           <div className="relative">
             <input
@@ -109,7 +109,7 @@ const NavBar = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="navbar-end gap-2 font-cinzel font-bold">
         <div className="flex justify-center items-center gap-3">
           {user ? (
@@ -134,10 +134,10 @@ const NavBar = () => {
                   <li></li>
                   <li>
                     <Link
-                      to="/dashboard/my-profile"
+                      to="/"
                       className="btn btn-outline text-secondary btn-sm"
                     >
-                      Dashboard
+                      Profile
                     </Link>
                   </li>
                   <li>
