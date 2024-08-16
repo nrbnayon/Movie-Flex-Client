@@ -28,7 +28,7 @@ const NavBar = () => {
           All Movies
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink
           to="/bestMovies"
           className="hover:text-primary hover:underline transition duration-300"
@@ -43,7 +43,7 @@ const NavBar = () => {
         >
           Request
         </NavLink>
-      </li>
+      </li> */}
     </>
   );
 

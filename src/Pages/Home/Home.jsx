@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Banner from "./Banner/Banner";
 import AllMovies from "./AllMovies/AllMovies";
+import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => {
   useEffect(() => {
@@ -38,11 +39,7 @@ const Home = () => {
         <AllMovies />
       </div>
       <div data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000">
-        Movie1 Movie1 Movie1
-      </div>
-
-      <div data-aos="flip-left" data-aos-delay="700" data-aos-duration="1000">
-        Movie1Movie1Movie1
+        <Testimonials />
       </div>
     </div>
   );

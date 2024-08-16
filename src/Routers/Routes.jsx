@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import GuestRoute from "./GuestRoute";
 import Login from "../Pages/Authentication/Login";
 import Register from "../Pages/Authentication/Register";
+import AllMovies from "../Pages/Home/AllMovies/AllMovies";
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
             <Register />
           </GuestRoute>
         ),
+      },
+      {
+        path: "/allMovies",
+        element: <AllMovies />,
       },
     ],
   },
