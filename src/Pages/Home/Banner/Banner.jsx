@@ -12,20 +12,14 @@ import {
 } from "swiper/modules";
 import { Link } from "react-router-dom";
 import useGetPopularMovies from "../../../hooks/useGetPopularMovies";
-
 const Banner = () => {
   const { movies, isLoading, error } = useGetPopularMovies();
 
-  if (isLoading) return <p className="text-center text-xl">Loading...</p>;
-  if (error)
-    return (
-      <div className="text-center text-xl text-red-600">
-        Error fetching popular movies
-      </div>
-    );
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <div>Error fetching popular movies</div>;
 
   return (
-    <div className="my-12 px-4 sm:px-6 lg:px-8">
+    <div className=" my-12 px-4 sm:px-6 lg:px-8">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -52,7 +46,7 @@ const Banner = () => {
         className="mySwiper"
       >
         {movies.map((movie) => (
-          <SwiperSlide key={movie._id} className="swiper-slide p-4">
+          <SwiperSlide key={movie._id} className="swiper-slides p-4">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="relative h-72 w-full">
                 <img

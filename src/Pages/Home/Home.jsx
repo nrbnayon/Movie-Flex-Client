@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Banner from "./Banner/Banner";
+import AllMovies from "./AllMovies/AllMovies";
 
 const Home = () => {
   useEffect(() => {
@@ -34,7 +35,7 @@ const Home = () => {
         <Banner />
       </div>
       <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-        Movie1 Movie1
+        <AllMovies />
       </div>
       <div data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000">
         Movie1 Movie1 Movie1
