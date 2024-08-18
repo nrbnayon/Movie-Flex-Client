@@ -12,10 +12,19 @@ import {
 } from "swiper/modules";
 import { Link } from "react-router-dom";
 import useGetPopularMovies from "../../../hooks/useGetPopularMovies";
+import { FaStar } from "react-icons/fa";
 const Banner = () => {
   const { movies, isLoading, error } = useGetPopularMovies();
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading)
+    return (
+      <h3 className="text-center">
+        <span className="loading loading-bars loading-xs"></span>
+        <span className="loading loading-bars loading-sm"></span>
+        <span className="loading loading-bars loading-md"></span>
+        <span className="loading loading-bars loading-lg"></span>
+      </h3>
+    );
   if (error) return <div>Error fetching popular movies</div>;
 
   return (
@@ -65,12 +74,17 @@ const Banner = () => {
                 </p>
                 <div className="flex justify-between items-center mb-4">
                   <span className="text-lg font-bold text-indigo-600">
-                    {movie.price} USD
+                    {movie.price} $
                   </span>
                   <span className="text-gray-600">
                     Category: {movie.category}
                   </span>
-                  <span className="text-gray-600">Rating: {movie.rating}</span>
+                  <div className="flex items-center">
+                    <FaStar className="text-yellow-400 mr-2" />
+                    <span className="text-lg font-bold text-indigo-600">
+                      {movie.rating}/5
+                    </span>
+                  </div>
                 </div>
                 <Link to={`/movieDetails/${movie._id}`}>
                   <button className="w-full py-2 px-4 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-300">
