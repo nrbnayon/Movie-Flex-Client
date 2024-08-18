@@ -2,6 +2,8 @@
 
 MovieFlex is a full-stack single-page web application for streaming movies, built using the MERN stack (MongoDB, Express.js, React.js, Node.js) with Tailwind CSS. This project includes features such as movie pagination, searching, categorization, sorting, and authentication via Google and email/password using Firebase.
 
+### Live - https://movieflexn.netlify.app
+
 ## Features
 
 - **Movie Listings**: Browse a diverse collection of movies with detailed information.
