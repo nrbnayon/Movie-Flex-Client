@@ -137,7 +137,7 @@ const AllMovies = () => {
           desc: "Browse and enjoy your favorite movies",
         }}
       />
-      <div className="md:w-[80%] my-6 mb-4 mx-auto text-center">
+      <div className="px-4 md:w-[80%] my-6 mb-4 mx-auto text-center">
         <button
           className="btn btn-primary px-6 py-2 my-2"
           onClick={() => handleCategoryChange("")}
