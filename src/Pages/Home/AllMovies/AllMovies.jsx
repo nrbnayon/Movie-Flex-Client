@@ -176,12 +176,12 @@ const AllMovies = () => {
             </button>
           </div>
           <FormControl fullWidth className="mb-4 lg:mb-0">
-            <InputLabel>Find by Rating</InputLabel>
+            <InputLabel>Filter by Rating</InputLabel>
             <Select
               value={rating}
               onChange={handleRatingChange}
-              label="Find by Rating"
-              className="bg-white border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
+              label="Filter by Rating"
+              className="bg-white border-gray-300 focus:ring-2  focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
             >
               <MenuItem value="">All</MenuItem>
               <MenuItem value="5.0">5.0</MenuItem>
@@ -198,6 +198,7 @@ const AllMovies = () => {
               label="Sort By"
               className="bg-white border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
             >
+              <InputLabel>Sort By</InputLabel>
               <MenuItem value="createdAtDesc">Newest First</MenuItem>
               <MenuItem value="createdAtAsc">Oldest First</MenuItem>
               <MenuItem value="priceAsc">Price: Low to High</MenuItem>
