@@ -137,19 +137,21 @@ const AllMovies = () => {
           desc: "Browse and enjoy your favorite movies",
         }}
       />
-      <div className="w-[80%] my-6 mb-4 mx-auto text-center">
+      <div className="md:w-[80%] my-6 mb-4 mx-auto text-center">
         <button
-          className="btn btn-primary my-2"
+          className="btn btn-primary px-6 py-2 my-2"
           onClick={() => handleCategoryChange("")}
         >
           All
         </button>
-        <div className="flex flex-wrap justify-center items-center gap-4">
+        <div className="flex flex-wrap justify-between md:justify-center items-center gap-2 md:gap-4">
           {uniqueCategories.map((cat) => (
             <NavLink
               key={cat}
               className={({ isActive }) =>
-                `btn ${isActive ? "btn-info" : "btn-secondary"} border`
+                `btn btn-sm md:btn-md ${
+                  isActive ? "btn-info" : "btn-secondary"
+                } border`
               }
               onClick={() => handleCategoryChange(cat)}
             >
