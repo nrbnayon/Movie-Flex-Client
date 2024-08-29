@@ -19,28 +19,25 @@ To get started with MovieFlex locally, follow these steps:
 
 1. **Clone the Repository**
 
-   ```bash
+   
    git clone https://github.com/nrbnayon/movieflex.git
    cd movieflex
-   ```
-
-````
+  
 
 2. **Install Dependencies**
 
 
    **Frontend**
 
-   ```bash
+  
    cd ../frontend
    npm install
-   ```
 
 3. **Configure Environment Variables**
 
    Create a `.env` file in the `backend` directory and add the following variables:
 
-   ```
+   
    MONGODB_URI=your_mongodb_connection_string
    JWT_SECRET=your_jwt_secret
    FIREBASE_API_KEY=your_firebase_api_key
@@ -49,16 +46,16 @@ To get started with MovieFlex locally, follow these steps:
    FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
    FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
    FIREBASE_APP_ID=your_firebase_app_id
-   ```
+   
 
 4. **Run the Application**
 
    **Frontend**
 
-   ```bash
+  
    cd ../frontend
    npm start
-   ```
+   
 
    The frontend will be available at `http://localhost:5173` and the backend API at `http://localhost:8000`.
 
